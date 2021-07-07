@@ -7,12 +7,12 @@ public class B {
 		A a=new A();
 		
 		a.add();
-		a.sub();
+	//	a.sub();
 		A.mult();
 		a.div();
 		
 		System.out.println(A.i);
-		System.out.println(a.j);
+	//	System.out.println(a.j);
 		System.out.println(a.k);
 		System.out.println(a.m);
 

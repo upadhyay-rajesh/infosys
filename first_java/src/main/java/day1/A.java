@@ -7,7 +7,7 @@ public class A {
 	int m=2;
 	
 	
-	final int square(int i, float f) {
+	 int square(int i, float f) {
 		return (int)(i*f);
 	}
 	
