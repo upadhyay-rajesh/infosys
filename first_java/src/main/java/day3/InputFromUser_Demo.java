@@ -25,9 +25,9 @@ public class InputFromUser_Demo {
 		
 		//what is unchecked exception?
 		//runtime exception is unchecked exception ex-ArithmeticException,NegativeArraySizeException
-		BufferedReader br=null;
-		try {
-		br=new BufferedReader(new InputStreamReader(System.in));
+		//BufferedReader br=null;
+		try(BufferedReader br=new BufferedReader(new InputStreamReader(System.in));) {
+		//br=new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("enter your first no");
 		String a=br.readLine();
 		int i1=Integer.parseInt(a);
@@ -56,14 +56,14 @@ public class InputFromUser_Demo {
 		//why finally block?
 		//finally block will insure proper termination of your program means we must close all the resources inside finally block
 		//either try block or catch block is executing but the finally block definitely execute.
-		finally {
+	/*	finally {
 			try {
 				br.close();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}
+		} */
 	}
 
 }
