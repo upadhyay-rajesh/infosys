@@ -51,7 +51,11 @@ public class Stream_Demo {
 		
 		
 		ll.stream().filter(e->e.getAddress().equals("Delhi")).map(e7->e7.getName()).forEach(System.out::println);
-		ll.parallelStream().filter(e->e.getAddress().equals("Delhi")).map(e7->e7.getName()).forEach(System.out::println);
+		ll.parallelStream().filter(e->e.getAddress().equals("Delhi")).map(e7->e7.getName()).forEach(ee1->{
+			System.out.println("*****************");
+			System.out.println(ee1);
+			System.out.println("*****************");
+		});
 			
 
 	}
