@@ -1,6 +1,9 @@
 package day3;
 
-public class Employee {
+import java.io.Serializable;
+//Serializable interface is a marker interface( interface without method), it will mark to jvm for storing object into a file.
+public class Employee implements Serializable{  //way of getting persistence( storing object) is known as serialization
+	
 	private String name;
 	private String password;
 	private String email;
