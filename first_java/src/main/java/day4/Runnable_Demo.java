@@ -33,6 +33,7 @@ public class Runnable_Demo extends Applet implements Runnable{
 	
 	public void paint(Graphics g) {
 		g.drawString(str, 100, 100);
+		g.drawRect(200, 200, 100, 50);
 	}
 
 	
